@@ -1,0 +1,49 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #515151;
+}
+
+.day_class{
+    display: none;
+}
+
+.day_class:checked + label > div{
+    height: 350px;
+    background-color: rgb(142, 181, 255);
+}
+.day_container{
+    margin: auto;
+    font-size: medium;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgb(54, 160, 253);
+    height: 50px;
+    width: 100%;
+    max-width: 500px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: height 600ms ease,
+                background-color 600ms ease;
+}
+
+.day_container_text{
+    box-sizing: border-box;
+    padding-top: 15px;
+    height: 50px;
+    position: relative;
+}
+
+.tiny_line{
+    background-color: black;
+    height:1px;
+    border-radius: 1px;
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    left: 10%;
+    top: 0px;
+}
